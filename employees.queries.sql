@@ -66,7 +66,7 @@ FROM deptarments
 --8. In descending order, list the frequency count of employee last names, i.e., how many employees share 
 --each last name.
 
-SELECT count (last_name), last_name AS  "last name"
+SELECT employees.last_name, count (last_name), last_name AS  "last name"
 FROM employees
 GROUP BY last_name
 ORDER BY "last name" DESC; 
